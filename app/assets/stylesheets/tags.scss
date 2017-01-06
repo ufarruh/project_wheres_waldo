@@ -1,0 +1,31 @@
+// Place all the styles related to the Tags controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.messagepop {
+  background-color:#FFFFFF;
+  border:1px solid #999999;
+  cursor:default;
+  display: inline;
+  position:absolute;
+  text-align:left;
+  width: 100px;
+  height: 100px;
+  z-index:50;
+  padding: 25px 25px 20px;
+  input {
+    width: 100px;
+  }
+}
+
+img {
+  z-index: -1;
+}
+
+#newTag {
+    background-image: url("http://www.planwallpaper.com/static/images/desktop-year-of-the-tiger-images-wallpaper.jpg");
+    display:inline-block;
+    position:absolute;
+    height:56px;
+    width:56px;
+}
