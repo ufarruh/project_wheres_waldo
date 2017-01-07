@@ -1,34 +1,28 @@
 var APP = APP || {};
 
-
 APP.tags = (function ()  {
 
-  var stub = {};
-
   var clickListener = function () {
-    $("#tagger").click(function() {
-        console.log("hello!");
+    $("#tagger").click(function(e) {
+        _attachTag(e)
     });
   }
 
-  var attachTag = function () {
-    $("#tagger").click( function (e) {
-      $("#newTag").remove("#newTag")
-      $("body").append("<span id=\"newTag\"/>")
-      $("#newTag").css("left", e.pageX - 19)
-      $("#newTag").css("top", e.pageY - 19)
-    });
+  var _attachTag = function (e) {
+    var x = e.pageX - 19;
+    var y = e.pageY - 19;
+    $("body").append("<div class='newBox' style='left: " + x + "px; top: " + y + "px;'></div>")
   };
 
+  var _renderForm = function () {};
+
   return {
-    clickListener: clickListener,
-    attachTag: attachTag
+    clickListener: clickListener
   }
 
 })();
 
 
 $(document).ready(function() {
-  //APP.tags.clickListener();
-  APP.tags.attachTag();
+  APP.tags.clickListener();
 });

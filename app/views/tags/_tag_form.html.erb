@@ -1,0 +1,4 @@
+<%= form_for tag, remote: true do |f| %>
+  <%= f.collection_select(:user_id, User.all, :id, :name ) %>
+  <%= f.submit "Tag It" %>
+<% end %>

@@ -9,22 +9,30 @@
   display: inline;
   position:absolute;
   text-align:left;
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   z-index:50;
   padding: 25px 25px 20px;
+
   input {
-    width: 100px;
+    width: 90px;
   }
 }
 
 img {
-  z-index: -1;
+  z-index: -2;
 }
 
-#newTag {
-    background-image: url("http://www.planwallpaper.com/static/images/desktop-year-of-the-tiger-images-wallpaper.jpg");
-    display:inline-block;
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+
+.newBox {
+    background-color: purple;
+    display:inline-block;;
     position:absolute;
     height:56px;
     width:56px;
